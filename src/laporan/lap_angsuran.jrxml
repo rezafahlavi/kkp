@@ -37,15 +37,15 @@ FROM
 		<band height="70" splitType="Stretch">
 			<image>
 				<reportElement uuid="1d34d002-5119-41e8-b999-abc7739a2a9f" x="-20" y="0" width="595" height="64"/>
-				<imageExpression><![CDATA["src/laporan/wood.jpg"]]></imageExpression>
+				<imageExpression><![CDATA["src/laporan/logo.jpg"]]></imageExpression>
 			</image>
 			<staticText>
-				<reportElement uuid="41e4955f-f405-42b2-a5bd-fad50dc47626" style="Title" x="0" y="5" width="291" height="33"/>
+				<reportElement uuid="41e4955f-f405-42b2-a5bd-fad50dc47626" style="Title" x="264" y="6" width="291" height="33" forecolor="#000000"/>
 				<textElement verticalAlignment="Middle"/>
 				<text><![CDATA[LAPORAN ANGSURAN]]></text>
 			</staticText>
 			<staticText>
-				<reportElement uuid="e8e0f6cf-b14e-4ec4-a4cd-6840fd9ab00e" style="SubTitle" x="63" y="39" width="274" height="22" forecolor="#FFFFFF"/>
+				<reportElement uuid="e8e0f6cf-b14e-4ec4-a4cd-6840fd9ab00e" style="SubTitle" x="264" y="42" width="274" height="22" forecolor="#000000"/>
 				<textElement textAlignment="Right"/>
 				<text><![CDATA[Koperasi PT Prima Karya Berjaya]]></text>
 			</staticText>
