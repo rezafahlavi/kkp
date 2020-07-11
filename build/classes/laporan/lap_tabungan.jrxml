@@ -47,6 +47,12 @@ FROM
 				<textElement textAlignment="Right"/>
 				<text><![CDATA[Koperasi PT Prima Karya Berjaya]]></text>
 			</staticText>
+			<line>
+				<reportElement uuid="1f91737e-e514-4137-b4e0-68bad0bc9ef7" x="247" y="-10" width="1" height="74"/>
+				<graphicElement>
+					<pen lineWidth="4.0"/>
+				</graphicElement>
+			</line>
 		</band>
 	</title>
 	<pageHeader>
@@ -58,6 +64,12 @@ FROM
 				<reportElement uuid="c6f655a0-9e85-44ab-860f-d68d409532e0" positionType="FixRelativeToBottom" x="0" y="35" width="555" height="1"/>
 				<graphicElement>
 					<pen lineWidth="0.5" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement uuid="1f91737e-e514-4137-b4e0-68bad0bc9ef7" x="-1" y="-7" width="553" height="1"/>
+				<graphicElement>
+					<pen lineWidth="4.0"/>
 				</graphicElement>
 			</line>
 			<staticText>
@@ -153,13 +165,41 @@ FROM
 		</band>
 	</detail>
 	<columnFooter>
-		<band height="45" splitType="Stretch">
+		<band height="120" splitType="Stretch">
 			<line>
 				<reportElement uuid="a70ccb47-b164-4e3e-a7d9-0e15b923be1e" positionType="FixRelativeToBottom" x="0" y="3" width="555" height="1"/>
 				<graphicElement>
 					<pen lineWidth="0.5" lineColor="#999999"/>
 				</graphicElement>
 			</line>
+			<staticText>
+				<reportElement uuid="9df91fc4-766c-4e1d-84b0-02d119f5503c" style="SubTitle" x="383" y="97" width="153" height="16" forecolor="#000000" backcolor="#000000"/>
+				<textElement textAlignment="Right">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[(Administration Manager)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="9df91fc4-766c-4e1d-84b0-02d119f5503c" style="SubTitle" x="383" y="15" width="52" height="16" forecolor="#000000" backcolor="#000000"/>
+				<textElement textAlignment="Right">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Banten,]]></text>
+			</staticText>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement uuid="42ae148c-0f94-4fd1-a2c5-2f8c72402a90" style="Column header" x="435" y="15" width="120" height="20" forecolor="#000000"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="9df91fc4-766c-4e1d-84b0-02d119f5503c" style="SubTitle" x="438" y="81" width="42" height="16" forecolor="#000000" backcolor="#000000"/>
+				<textElement textAlignment="Right">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Fanicia]]></text>
+			</staticText>
 		</band>
 	</columnFooter>
 	<pageFooter>
