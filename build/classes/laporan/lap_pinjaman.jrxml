@@ -199,59 +199,37 @@ FROM
 				</graphicElement>
 			</line>
 			<staticText>
-				<reportElement uuid="9df91fc4-766c-4e1d-84b0-02d119f5503c" style="SubTitle" x="383" y="104" width="153" height="16" forecolor="#000000" backcolor="#000000"/>
+				<reportElement uuid="9df91fc4-766c-4e1d-84b0-02d119f5503c" style="SubTitle" x="422" y="105" width="69" height="16" forecolor="#000000" backcolor="#000000"/>
 				<textElement textAlignment="Right">
 					<font size="12" isBold="true"/>
 				</textElement>
-				<text><![CDATA[(Administration Manager)]]></text>
+				<text><![CDATA[(  Fanicia  )]]></text>
+			</staticText>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement uuid="42ae148c-0f94-4fd1-a2c5-2f8c72402a90" style="Column header" x="417" y="16" width="138" height="16" forecolor="#000000"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new SimpleDateFormat("EEEE dd MMMMM yyyy",new java.util.Locale("id")).format(new Date())]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="9df91fc4-766c-4e1d-84b0-02d119f5503c" style="SubTitle" x="364" y="32" width="153" height="16" forecolor="#000000" backcolor="#000000"/>
+				<textElement textAlignment="Right">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Administration Manager]]></text>
 			</staticText>
 			<staticText>
-				<reportElement uuid="9df91fc4-766c-4e1d-84b0-02d119f5503c" style="SubTitle" x="383" y="22" width="52" height="16" forecolor="#000000" backcolor="#000000"/>
+				<reportElement uuid="9df91fc4-766c-4e1d-84b0-02d119f5503c" style="SubTitle" x="353" y="16" width="52" height="16" forecolor="#000000" backcolor="#000000"/>
 				<textElement textAlignment="Right">
 					<font size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[Banten,]]></text>
 			</staticText>
-			<textField pattern="EEEEE dd MMMMM yyyy">
-				<reportElement uuid="42ae148c-0f94-4fd1-a2c5-2f8c72402a90" style="Column header" x="435" y="22" width="120" height="20" forecolor="#000000"/>
-				<textElement>
-					<font size="12" isBold="true"/>
-				</textElement>
-				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
-			</textField>
-			<staticText>
-				<reportElement uuid="9df91fc4-766c-4e1d-84b0-02d119f5503c" style="SubTitle" x="444" y="88" width="42" height="16" forecolor="#000000" backcolor="#000000"/>
-				<textElement textAlignment="Right">
-					<font size="12" isBold="true"/>
-				</textElement>
-				<text><![CDATA[Fanicia]]></text>
-			</staticText>
 		</band>
 	</columnFooter>
 	<pageFooter>
-		<band height="20" splitType="Stretch">
-			<textField>
-				<reportElement uuid="a31640a7-c78d-41ca-bf0c-7cc329cee2e5" style="Column header" x="433" y="0" width="80" height="20"/>
-				<textElement textAlignment="Right">
-					<font size="10" isBold="false"/>
-				</textElement>
-				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
-			</textField>
-			<textField evaluationTime="Report">
-				<reportElement uuid="c1a7ae2f-ebb2-42b2-a3d0-784e9469a5b6" style="Column header" x="513" y="0" width="40" height="20"/>
-				<textElement>
-					<font size="10" isBold="false"/>
-				</textElement>
-				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
-			</textField>
-			<textField pattern="EEEEE dd MMMMM yyyy">
-				<reportElement uuid="feee723c-9431-4c07-aa62-643072690e5b" style="Column header" x="0" y="0" width="197" height="20"/>
-				<textElement>
-					<font size="10" isBold="false"/>
-				</textElement>
-				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
-			</textField>
-		</band>
+		<band height="20" splitType="Stretch"/>
 	</pageFooter>
 	<summary>
 		<band splitType="Stretch"/>
